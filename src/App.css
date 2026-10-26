@@ -1,0 +1,28 @@
+.aplicacion {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 24px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.bottom-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
