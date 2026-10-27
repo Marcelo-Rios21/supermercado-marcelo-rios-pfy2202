@@ -4,17 +4,17 @@ export default function Contactanos() {
       <h1>Contáctanos</h1>
 
       <p>
-        Para consultas generales sobre nuestro supermercado,
-        puedes comunicarte mediante nuestro correo de contacto.
+        ¿Tienes alguna consulta sobre nuestro supermercado?
+        Puedes escribirnos al siguiente correo:
       </p>
 
       <p>
-        <strong>Correo de ejemplo:</strong> contacto@supermercado.example
+        <strong>Correo:</strong> contacto@supermercado.example
       </p>
 
       <p>
-        Este correo es ilustrativo y no corresponde a un
-        canal de atención real.
+        Este correo es ficticio y se utiliza únicamente
+        para esta actividad.
       </p>
     </section>
   )

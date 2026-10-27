@@ -1,16 +1,63 @@
-# React + Vite
+# Supermercado React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Sitio web de supermercado desarrollado con React, JavaScript,
+HTML y CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación utiliza React Router para navegar entre tres páginas
+sin recargar completamente el sitio.
 
-## React Compiler
+## Páginas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Inicio: presentación del inventario con productos de ejemplo.
+- Quiénes somos: información general del supermercado.
+- Contáctanos: información de contacto ilustrativa.
 
-## Expanding the Oxlint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React
+- React Router
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+## Requisitos
+
+- Node.js compatible con Vite
+- npm
+
+## Instalación
+
+Clonar el repositorio y acceder a la carpeta del proyecto.
+
+Instalar las dependencias:
+
+~~~bash
+npm install
+~~~
+
+## Ejecución
+
+Iniciar el servidor de desarrollo:
+
+~~~bash
+npm run dev
+~~~
+
+Abrir en el navegador la dirección local indicada por Vite.
+
+## Verificación
+
+Compilar el proyecto:
+
+~~~bash
+npm run build
+~~~
+
+Ejecutar el analizador de código:
+
+~~~bash
+npm run lint
+~~~

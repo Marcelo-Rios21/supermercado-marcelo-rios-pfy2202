@@ -4,12 +4,13 @@ export default function Home() {
       <h1>Inventario del supermercado</h1>
 
       <p>
-        Bienvenido al sistema de inventario de nuestro supermercado.
-        Aquí puedes consultar los productos y sus existencias.
+        Aquí puedes revisar una muestra de los productos que maneja
+        el supermercado. Cada artículo tiene su categoría y la
+        cantidad de unidades registradas.
       </p>
 
-      <h2>Productos disponibles</h2>
-      <p>Los siguientes datos son ejemplos.</p>
+      <h2>Productos en inventario</h2>
+      <p>Los productos y cantidades mostrados son datos de ejemplo.</p>
 
       <table>
         <thead>

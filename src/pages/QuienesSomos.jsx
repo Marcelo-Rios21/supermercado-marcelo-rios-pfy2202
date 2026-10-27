@@ -4,13 +4,16 @@ export default function QuienesSomos() {
       <h1>Quiénes somos</h1>
 
       <p>
-        Somos un supermercado dedicado a ofrecer productos
-        de alimentación, limpieza y artículos de uso cotidiano.
+        En nuestro supermercado nos enfocamos en las compras de todos
+        los días. Trabajamos con productos de despensa, lácteos, frutas
+        y artículos de limpieza: cosas que suelen hacer falta en
+        cualquier casa.
       </p>
 
       <p>
-        Nuestro objetivo es mantener una variedad de productos
-        disponibles para satisfacer las necesidades de nuestros clientes.
+        Queremos mantener las cosas simples: productos fáciles de
+        encontrar y un inventario organizado para saber qué tenemos
+        disponible.
       </p>
     </section>
   )
