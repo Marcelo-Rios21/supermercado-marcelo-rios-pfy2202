@@ -1,18 +1,33 @@
 # Supermercado React
 
+Proyecto académico de la asignatura Desarrollo Frontend II (PFY2202).
+
 ## Descripción
 
-Sitio web de supermercado desarrollado con React, JavaScript,
-HTML y CSS.
+Sitio web de gestión de inventario para un supermercado, desarrollado
+con React, JavaScript, HTML y CSS.
 
-La aplicación utiliza React Router para navegar entre tres páginas
-sin recargar completamente el sitio.
+La aplicación utiliza React Router para navegar entre cinco páginas
+y Context API para compartir el inventario entre componentes.
 
 ## Páginas
 
-- Inicio: presentación del inventario con productos de ejemplo.
+- Inicio: página principal del supermercado.
 - Quiénes somos: información general del supermercado.
 - Contáctanos: información de contacto ilustrativa.
+- Agregar artículo: formulario para registrar nombre, marca y tipo de producto.
+- Ver inventario: tabla con los artículos registrados.
+
+## Funcionalidades
+
+- Navegación entre páginas mediante React Router.
+- Menú inferior y menú de gestión de inventario.
+- Estado global de artículos mediante Context API y useState.
+- Registro de artículos mediante un formulario.
+- Visualización de los artículos registrados en una tabla.
+
+Los artículos se almacenan temporalmente en el estado de React.
+Al recargar la página, la lista vuelve a estar vacía.
 
 ## Tecnologías utilizadas
 
@@ -21,6 +36,7 @@ sin recargar completamente el sitio.
 - JavaScript
 - HTML
 - CSS
+- Tailwind CSS
 - Vite
 
 ## Requisitos
