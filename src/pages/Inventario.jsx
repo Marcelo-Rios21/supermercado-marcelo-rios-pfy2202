@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 import { useArticulos } from '../context/ArticulosContext.js'
 
 export default function Inventario() {
@@ -61,7 +62,14 @@ export default function Inventario() {
             ) : (
               articulosFiltrados.map((articulo) => (
                 <tr key={articulo.id}>
-                  <td>{articulo.nombre}</td>
+                  <td>
+                    <Link
+                      to={`/inventario/${articulo.id}`}
+                      className="font-medium text-slate-800 underline"
+                    >
+                      {articulo.nombre}
+                    </Link>
+                  </td>
                   <td>{articulo.marca}</td>
                   <td>{articulo.tipo}</td>
                   <td>{articulo.cantidadDisponible}</td>

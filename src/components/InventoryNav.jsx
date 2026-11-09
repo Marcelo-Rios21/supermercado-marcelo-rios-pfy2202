@@ -20,6 +20,9 @@ export default function InventoryNav() {
       <NavLink to="/inventario" className={estilo}>
         Ver inventario
       </NavLink>
+      <NavLink to="/carrito" className={estilo}>
+        Carrito
+      </NavLink>
     </nav>
   )
 }
