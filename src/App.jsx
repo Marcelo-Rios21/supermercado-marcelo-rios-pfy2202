@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { HashRouter, Routes, Route } from 'react-router'
 import { ArticulosProvider } from './context/ArticulosProvider.jsx'
 import BottomNav from './components/BottomNav.jsx'
 import InventoryNav from './components/InventoryNav.jsx'
@@ -14,7 +14,7 @@ import './App.css'
 export default function App() {
   return (
     <ArticulosProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="aplicacion">
           <main>
             <InventoryNav />
@@ -32,7 +32,7 @@ export default function App() {
 
           <BottomNav />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ArticulosProvider>
   )
 }
