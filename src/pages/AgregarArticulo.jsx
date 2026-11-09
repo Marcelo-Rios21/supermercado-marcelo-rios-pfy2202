@@ -7,6 +7,7 @@ export default function AgregarArticulo() {
   const [nombre, setNombre] = useState('')
   const [marca, setMarca] = useState('')
   const [tipo, setTipo] = useState('')
+  const [cantidad, setCantidad] = useState('')
 
   function manejarEnvio(evento) {
     evento.preventDefault()
@@ -15,9 +16,17 @@ export default function AgregarArticulo() {
       nombre: nombre.trim(),
       marca: marca.trim(),
       tipo: tipo.trim(),
+      cantidadDisponible: Number(cantidad),
     }
 
-    if (!articulo.nombre || !articulo.marca || !articulo.tipo) {
+    if (
+      !articulo.nombre ||
+      !articulo.marca ||
+      !articulo.tipo ||
+      cantidad === '' ||
+      !Number.isInteger(articulo.cantidadDisponible) ||
+      articulo.cantidadDisponible < 0
+    ) {
       return
     }
 
@@ -26,6 +35,7 @@ export default function AgregarArticulo() {
     setNombre('')
     setMarca('')
     setTipo('')
+    setCantidad('')
   }
 
   return (
@@ -75,6 +85,22 @@ export default function AgregarArticulo() {
             type="text"
             value={tipo}
             onChange={(evento) => setTipo(evento.target.value)}
+            required
+            className="w-full rounded border border-slate-300 p-2"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="cantidad" className="mb-1 block font-medium">
+            Cantidad disponible
+          </label>
+          <input
+            id="cantidad"
+            type="number"
+            min="0"
+            step="1"
+            value={cantidad}
+            onChange={(evento) => setCantidad(evento.target.value)}
             required
             className="w-full rounded border border-slate-300 p-2"
           />
